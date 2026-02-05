@@ -18,9 +18,7 @@ The original code reverses standard lists [a] efficiently via tail recursion and
 
 module ListAppearsAsRecursiveMultipointedStructure where
 
--- The original structure. /
--- Combined logic with reverse /
--- The helper function only works with non-empty accumulators.
+-- Combined logic with reverse. 
 
 The "reverse" algorithm sequentially "bites off" the head from the list and appends it to the result. The typing ListArityimposes a hard constraint: a list can either be empty ( Zero) or have at least one element ( One). However, Consit always returns ListArity One, regardless of the input. This turns the type into an "empty/non-empty" indicator:
 
